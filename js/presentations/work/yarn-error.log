@@ -1,0 +1,54 @@
+Arguments: 
+  /usr/bin/node /usr/bin/yarn add cookie-parser
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/snap/bin
+
+Yarn version: 
+  1.15.2
+
+Node version: 
+  10.15.3
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: EACCES: permission denied, unlink '/www/intensives/js/presentations/work/node_modules/yarn/LICENSE'
+
+npm manifest: 
+  {
+    "name": "test",
+    "version": "0.0.1",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "frf": "echo 'hello world'",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Ravino/test.git"
+    },
+    "keywords": [
+      "test",
+      "work"
+    ],
+    "author": "Ravino",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/Ravino/test/issues"
+    },
+    "homepage": "https://github.com/Ravino/test#readme",
+    "dependencies": {
+      "express": "^4.16.4",
+      "pug": "^2.0.3",
+      "yarn": "^1.15.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

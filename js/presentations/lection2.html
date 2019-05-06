@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Material theme for Shower</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="shower/themes/material/styles/styles.css">
+
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+            --color-key: #4caf50;
+        }
+    </style>
+</head>
+
+
+<body class="shower list">
+
+    <header class="caption">
+        <h1>JavaScript и современный стек веб-разработки</h1>
+        <p>Идёшь в ногу со временем и ты всегда востребован.</p>
+    </header>
+
+
+    <section class="slide">
+        <h2>nodejs</h2>
+
+        <p>Что это такое?</p>
+
+    </section>
+
+
+    <section class="slide">
+        <h2>Начало серверного JavaScript </h2>
+
+        <p>В 1996 году в компании Netscape были попытки создания серверного JavaScript (Server-side JavaScript — SSJS), однако технология не получила распространения.
+        </p>
+    </section>
+
+
+    <section class="slide">
+        <h2>Два года исследований</h2>
+
+        <p>Модель параллелизма и потоков искала замену</p>
+    </section>
+
+
+    <section class="slide">
+        <h2>2009 год</h2>
+
+        <p>Райан Дал пришёл к событийно-ориентированным системам. Эта модель была выбрана из-за простоты, низких накладных расходов (по сравнению с идеологией «один поток на каждое соединение») и быстродействия.</p>
+
+    </section>
+
+
+    <section class="slide">
+        <h2>Появление nodejs</h2>
+
+        <p>V8, Google Chrome и развитие SSJS</p>
+    </section>
+
+
+    <section class="slide">
+        <h2>Идея nodejs</h2>
+
+        <p>Предложить простой способ построения масштабируемых сетевых серверов</p>
+    </section>
+
+
+    <section class="slide">
+
+        <h2>Nodejs, Browsers, JS</h2>
+
+        <p>Сервер, браузер? Почему JavaScript мощный язык?</p>
+    </section>
+
+
+    <section class="slide">
+        <h2>Язык -- это инструмент!</h2>
+        <p>Сообщество, библиотеки и фреймворки</p>
+    </section>
+
+
+    <section class="slide">
+        <h2>Распространение библиотек, фреймворков</h2>
+
+        <ul>
+          <li>github</li>
+          <li>e-mail</li>
+          <li>Иные виды</li>
+        </ul>
+    </section>
+
+
+    <section class="slide">
+        <h2>Менеджеры пакетов</h2>
+        <p>Что это такое?</p>
+    </section>
+
+
+    <section class="slide">
+        <h2>Пакетный менеджер в работе</h2>
+        <ul>
+          <li>Репозиторий</li>
+          <li>Определение зависимостей</li>
+          <li>Сборка</li>
+          <li>Установка</li>
+        </ul>
+
+    </section>
+
+
+    <section class="slide">
+      <h2>Пакетные менеджеры для nodejs</h2>
+      <ul>
+        <li>npm</li>
+        <li>yarn from FaceBook</li>
+      </ul>
+    </section>
+
+
+    <section class="slide">
+        <h2>npm</h2>
+        <p>node package manager from Node.js Foundation </p>
+    </section>
+
+
+    <section class="slide">
+        <h2>npm</h2>
+        <p>Возможности</p>
+    </section>
+
+
+    <section class="slide">
+        <h2>yarn</h2>
+        <p>FaceBook делать было нечего вечером</p>
+    </section>
+
+
+    <section class="slide">
+      <h2>yarn</h2>
+      <p>Возможности</p>
+    </section>
+
+
+    <section class="slide">
+        <h2>Различия в командах</h2>
+        <pre>
+        npm (v5)	Yarn
+npm init	yarn init
+npm init --yes	yarn init -y
+npm install	yarn install
+(нет аналога)	yarn install --flat
+(нет аналога)	yarn install --har
+npm install --no-package-lock	yarn install --no-lockfile
+(нет аналога)	yarn install --pure-lockfile
+npm install [package]	yarn add [package]
+npm install [package] --save-dev	yarn add [package] --dev
+(нет аналога)	yarn add [package] --peer
+npm install [package] --save-optional	yarn add [package] --optional
+npm install [package] --save-exact	yarn add [package] --exact
+(нет аналога)	yarn add [package] --tilde
+npm install [package] --global	yarn global add [package]
+npm update --global	yarn global upgrade
+npm rebuild	yarn add --force
+npm uninstall [package]	yarn remove [package]
+npm cache clean	yarn cache clean [package]
+rm -rf node_modules && npm install	yarn upgrade
+npm version major	yarn version --major
+npm version minor	yarn version --minor
+npm version patch	yarn version --patch
+</pre>
+    </section>
+
+
+    <section class="slide">
+        <h2>package.json</h2>
+        <p>Хранение информации о вашем проекте</p>
+    </section>
+
+
+    <section class="slide">
+      <h2>package-lock.json</h2>
+      <p>Техническая и вспомагательная информация</p>
+    </section>
+
+
+    <section class="slide">
+        <h2>dependences </h2>
+<p>Основные зависимости проекта</p>
+    </section>
+
+
+    <section class="slide">
+        <h2>dev-dependences</h2>
+<p>Зависимости при разработке проекта</p>
+</section>
+
+
+    <section class="slide">
+        <h2>Продолжаем настраивать окружение</h2>
+<p>npm init</p>
+    </section>
+
+
+    <section class="slide">
+      <h2>express</h2>
+      <p>npm install express</p>
+    </section>
+
+
+    <section class="slide">
+      <h2>pug</h2>
+      <p>npm install pug</p>
+    </section>
+
+
+    <section class="slide">
+        <h2>Домашнее заданее</h2>
+        <ul>
+          <li>Разобраться, если возникли сложности</li>
+          <li>Ознакомиться с документацией express</li>
+          <li>Ознакомиться с шаблонизатором pug</li>
+          <li>Установить body-parser</li>
+          <li>Установить cookie-parser</li>
+          <li>Установить htmlspecialchars </li>
+        </ul>
+    </section>
+
+
+    <section class="slide">
+        <h2>Мои контакты</h2>
+
+        <ul>
+          <li>VK www.vk.com/ravino_doul</li>
+          <li>Github www.github.com/Ravino</li>
+          <li>e-mail evgeniy@nekrasov.pw</li>
+          <li>+7-914-968-93-21</li>
+        </ul>
+
+    </section>
+    
+    
+    <section class="slide">
+      <textarea width=100%></textarea>
+      </section>
+
+
+
+    <div class="progress"></div>
+
+
+	<script src="shower/shower.min.js"></script>
+
+</body>
+</html>
