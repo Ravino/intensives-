@@ -29,6 +29,7 @@ router. get ("/", (req, res) => {
 
 
 router. use ("/support", require ("./support.js"));
+router. use ("/signin", require ("./signin.js"));
 
 
 module. exports = router;

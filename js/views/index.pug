@@ -6,7 +6,7 @@ html(lang="ru")
 
     meta(charset="utf8")
 
-    title= title
+    title= page. title
 
 
     link(rel="stylesheet", href="/css/index.css", type="text/css")
@@ -15,12 +15,16 @@ html(lang="ru")
   body
 
     div
-      h1 Моя страница, главная.
+      h1= page. header
 
 
     div(role="navigation")
       include parshells/menu.pug
-      +menu ()
+      +menu (page. menu)
+
+
+    div
+      span= page. footer
 
 
 

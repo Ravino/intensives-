@@ -10,11 +10,13 @@ const app = require ("express") ();
 
 const bodyParser = require ("body-parser");
 const cookieParser = require ("cookie-parser");
+const session = require ("express-session");
 
 const compileSass = require ("express-compile-sass");
 const compilerLess = require ("express-compiless");
 
 
+const passport = require ("./passport/index.js");
 const routes = require ("./routes/index.js");
 
 
@@ -26,8 +28,15 @@ app. use (cookieParser ());
 app. use (bodyParser. json ());
 app. use (bodyParser. urlencoded ({ "extended": true}));
 
+app. use (session ({ "secret": "keyboard cat", "resave": true, "saveUninitialized": true }));
+
 const staticDir = "./static";
 app. use (serveStatic ("./static"));
+
+
+app. use (passport. initialize ());
+app. use (passport. session ());
+
 
 
 app. use (compileSass ({

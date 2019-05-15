@@ -1,8 +1,10 @@
-mixin menu ()
+mixin menu (argArray)
 
   ul
-    li
-      a(href="/") Главная
 
-    li
-      a(href="/support") Поддержка
+    for i in argArray
+      li: a(href= i. href)= i. name
+
+
+
+
