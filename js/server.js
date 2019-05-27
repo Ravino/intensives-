@@ -16,11 +16,19 @@ const compileSass = require ("express-compile-sass");
 const compilerLess = require ("express-compiless");
 
 
+
+const jsonDb = require ("node-json-db");
+
+
 const passport = require ("./passport/index.js");
 const routes = require ("./routes/index.js");
 
 
 const serveStatic = require ("serve-static");
+
+
+
+global. db = new jsonDb ("db", true, false);
 
 
 app. use (cookieParser ());

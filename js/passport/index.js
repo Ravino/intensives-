@@ -10,7 +10,7 @@ const localStrategy = require ("./strategys/local.js");
 passport. use (localStrategy);
 
 passport. serializeUser (function (user, done) {
-  done(null, user.id);
+  done(null, user);
 });
 
 

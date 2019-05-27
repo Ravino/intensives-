@@ -18,6 +18,15 @@ const passport = require ("passport");
 
 router. get ("/", (req, res)  => {
 
+  if (req. isAuthenticated ()) {
+  
+    res. redirect ("/private");
+    
+    
+    return true;
+  }
+
+
   res. render ("signin.pug", { "page": page});
 
 });
@@ -27,7 +36,16 @@ router. get ("/", (req, res)  => {
 
 router. post ("/", passport. authenticate ("local"), (req, res) => {
 
+
+  if (req. isAuthenticated ()) {
+  
+    res. redirect ("/private");
+    
+    
+    return true;
+  }
   console. log (req. body);
+  res. redirect ("/");
 
 });
 
